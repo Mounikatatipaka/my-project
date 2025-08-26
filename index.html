@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Vista Restaurant</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Bella Vista</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Bella Vista</h1>
+            <p class="hero-subtitle">Experience culinary excellence in the heart of the city</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">View Menu</a>
+                <a href="#contact" class="btn btn-secondary">Make Reservation</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Restaurant Interior">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Our Story</h2>
+                    <p class="about-description">
+                        For over 20 years, Bella Vista has been serving exceptional cuisine crafted from the finest ingredients. 
+                        Our passionate chefs combine traditional techniques with modern innovation to create unforgettable dining experiences.
+                    </p>
+                    <p class="about-description">
+                        Located in the heart of downtown, we pride ourselves on creating a warm, welcoming atmosphere where 
+                        every meal becomes a cherished memory.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>20+</h3>
+                            <p>Years of Excellence</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Signature Dishes</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1000+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/887827/pexels-photo-887827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Chef cooking">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+c    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="menu-categories">
+                <div class="menu-category active" data-category="appetizers">Appetizers</div>
+                <div class="menu-category" data-category="mains">Main Courses</div>
+                <div class="menu-category" data-category="desserts">Desserts</div>
+                <div class="menu-category" data-category="beverages">Beverages</div>
+            </div>
+            
+            <div class="menu-items">
+                <!-- Appetizers -->
+                <div class="menu-section" id="appetizers">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h3>Truffle Arancini</h3>
+                            <p>Crispy risotto balls with truffle oil and parmesan</p>
+                        </div>
+                        <div class="menu-item-price">$18</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h3>Burrata Caprese</h3>
+                            <p>Fresh burrata with heirloom tomatoes and basil</p>
+                        </div>
+                        <div class="menu-item-price">$22</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h3>Tuna Tartare</h3>
+                            <p>Yellowfin tuna with avocado and citrus dressing</p>
+                        </div>
+                        <div class="menu-item-price">$26</div>
+                    </div>
+                </div>
+
+                <!-- Main Courses -->
+                <div class="menu-section hidden" id="mains">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h3>Grilled Salmon</h3>
+                            <p>Atlantic salmon with lemon herb butter and seasonal vegetables</p>
+                        </div>
+                        <div class="menu-item-price">$32</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h3>Ribeye Steak</h3>
+                            <p>12oz prime ribeye with garlic mashed potatoes</p>
+                        </div>
+                        <div class="menu-item-price">$48</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h3>Lobster Ravioli</h3>
+                            <p>Handmade pasta with lobster in cream sauce</p>
+                        </div>
+                        <div class="menu-item-price">$38</div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-section hidden" id="desserts">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h3>Chocolate Soufflé</h3>
+                            <p>Warm chocolate soufflé with vanilla ice cream</p>
+                        </div>
+                        <div class="menu-item-price">$14</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h3>Tiramisu</h3>
+                            <p>Classic Italian dessert with espresso and mascarpone</p>
+                        </div>
+                        <div class="menu-item-price">$12</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h3>Crème Brûlée</h3>
+                            <p>Vanilla custard with caramelized sugar crust</p>
+                        </div>
+                        <div class="menu-item-price">$13</div>
+                    </div>
+                </div>
+
+                <!-- Beverages -->
+                <div class="menu-section hidden" id="beverages">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h3>House Wine Selection</h3>
+                            <p>Red, white, or rosé from our curated collection</p>
+                        </div>
+                        <div class="menu-item-price">$12</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h3>Craft Cocktails</h3>
+                            <p>Signature cocktails made with premium spirits</p>
+                        </div>
+                        <div class="menu-item-price">$16</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h3>Artisan Coffee</h3>
+                            <p>Freshly roasted coffee beans, espresso, or cappuccino</p>
+                        </div>
+                        <div class="menu-item-price">$6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&dpr=1" alt="Dish 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&dpr=1" alt="Dish 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&dpr=1" alt="Dish 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&dpr=1" alt="Restaurant Interior">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&dpr=1" alt="Dish 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&dpr=1" alt="Dish 5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Location</h3>
+                        <p> Kphb<br>Ranga reddy District<br>Hyderabad, 500072</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Hours</h3>
+                        <p>Monday - Thursday: 5:00 PM - 10:00 PM<br>
+                           Friday - Saturday: 5:00 PM - 11:00 PM<br>
+                           Sunday: 4:00 PM - 9:00 PM</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Reservations</h3>
+                        <p>Phone: +91 9666087408<br>
+                           Email: mounikatatipaka5@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <input type="date" placeholder="Reservation Date">
+                        </div>
+                        <div class="form-group">
+                            <select>
+                                <option>Number of Guests</option>
+                                <option>1 Guest</option>
+                                <option>2 Guests</option>
+                                <option>3 Guests</option>
+                                <option>4 Guests</option>
+                                <option>5+ Guests</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Special Requests" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Make Reservation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bella Vista</h3>
+                    <p>Experience culinary excellence in the heart of the city</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bella Vista Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
